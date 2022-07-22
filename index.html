@@ -1,43 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Nerds</title>
-  </head>
-  <body>
-    <div class="page-container">
-      <header class="page-header">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип интернет-магазина Nerds">
-        </a>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <span class="navigation-item-content">Студия</span>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Nerds</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="page-header">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" alt="Логотип интернет-магазина Nerds.">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <span class="navigation-item-content">Студия</span>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-content" href="#">Клиенты</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-content" href="catalog.html">Магазин</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-content" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="navigation-shopping-cart" href="#">Корзина</a>
+      </nav>
+      <div class="header-slider">
+        <div class="header-slider-text-block">
+          <h1 class="visually-hidden">Магазин готовых шаблонов Nerds</h1>
+          <h2 class="header-slider-title">Долго, дорого, скрупулезно.</h2>
+          <p class="header-slider-description">Математически выверенный дизайн для вашего сайта или мобильного
+            приложения.</p>
+          <a class="button button-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+        <button class="header-slider-button" type="button" disabled>Первый</button>
+        <button class="header-slider-button" type="button">Второй</button>
+        <button class="header-slider-button" type="button">Третий</button>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3 class="services-item-title">Веб-сайты</h3>
+            <p class="services-item-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button button-red">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3 class="services-item-title">Приложения</h3>
+            <p class="services-item-description">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button button-green">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3 class="services-item-title">Презентации</h3>
+            <p class="services-item-description">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button button-yellow">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+        <h2 class="visually-hidden">О компании</h2>
+        <div class="about-info">
+          <h3 class="about-info-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+          <p class="about-info-description">Исповедуем принципы минимализма и чистоты. Ставим математический
+            расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h4 class="about-info-work-sphere-title">Выполняем заказы на разработку:</h4>
+          <ul class="about-info-work-sphere-list">
+            <li class="about-info-work-sphere-item">Веб-сайтов любой сложности</li>
+            <li class="about-info-work-sphere-item">Мобильных приложений для iOS и Android</li>
+            <li class="about-info-work-sphere-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-advantages">
+          <h4 class="about-advantages-title">с 2004 года Любим точность во всем:</h4>
+          <img class="about-advantages-logo" alt="Логотип интернет-магазина Nerds.">
+          <ul class="about-advantages-statistics">
+            <li class="about-advantages-statistics-item">
+              <span class="about-advantages-statistics-item-percentage">146</span>
+              <span class="about-advantages-statistics-item-percentage-element">%</span>
+              <p class="about-advantages-statistics-item-description">Уровень самоотдачи</p>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-item-content" href="#">Клиенты</a>
+            <li class="about-advantages-statistics-item">
+              <span class="about-advantages-statistics-item-percentage">100</span>
+              <span class="about-advantages-statistics-item-percentage-element">%</span>
+              <p class="about-advantages-statistics-item-description">Соблюдение сроков</p>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-item-content" href="catalog.html">Магазин</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item-content" href="#">Контакты</a>
+            <li class="about-advantages-statistics-item">
+              <span class="about-advantages-statistics-item-percentage">50</span>
+              <span class="about-advantages-statistics-item-percentage-element">%</span>
+              <p class="about-advantages-statistics-item-description">Минимальная предоплата</p>
             </li>
           </ul>
-          <a class="navigation-shopping-cart" href="#">Корзина</a>
-        </nav>
-        <div class="header-slider">
-          <
         </div>
+      </section>
+      <section class="clients">
+        <h2 class="visually-hidden">Клиенты</h2>
+        <ul class="clients-list">
+          <li class="clients-list-item">
+            <img class="clients-list-image" alt="Логотип HTML Academy.">
+          </li>
+          <li class="clients-list-item">
+            <img class="clients-list-image" alt="Логотип Barbershop Borodinski.">
+          </li>
+          <li class="clients-list-item">
+            <img class="clients-list-image" alt="Логотип Pink.">
+          </li>
+          <li class="clients-list-item">
+            <img class="clients-list-image" alt="Логотип Mishka.">
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts-information-card">
+          <h3 class="contacts-information-card-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts-information-card-description-adress">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <a class="contacts-information-card-description-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <button class="button button-red" type="submit">Напишите нам</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-promo">
+        <h3 class="footer-promo-title">Давайте дружить, это выгодно!</h3>
+        <p class="footer-promo-description">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+  </div>
+</body>
 
-      </header>
-      <main>
-
-      </main>
-      <footer>
-
-      </footer>
-    </div>
-  </body>
 </html>
