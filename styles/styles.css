@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/roboto.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: medium;
+  font-weight: 500;
+  src: url("fonts/robotomedium.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: bold;
+  font-weight: 700;
+  src: url("fonts/robotobold.woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  background-color: #EEEEEE;
+}
+
+.navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.index-slider-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.services-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-info-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.about-info-work-sphere-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-advantages-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.row-percentage {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.about-advantages-statistics-percentage {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.contacts-information-card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts-information-card-description-adress,
+.contacts-information-card-description-phone {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.footer-promo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer-promo-description {
+  line-height: 22px;
+  color: #444444;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #000000;
+}
+
+.field-group-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.feedback-form-field {
+  line-height: 18px;
+  color: #444444;
+}
+
+.catalog-page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-filter-label {
+  line-height: 22px;
+}
+
+.range-input {
+  line-height: 22px;
+}
+
+.control-label {
+  line-height: 20px;
+}
+
+.button-grey {
+  color: #000000;
+}
+
+.sorting-container-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.range-type-text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.template-catalog-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.template-catalog-item-description {
+  line-height: 18px;
+  color: #666666;
+}
+
+.catalog-pagination {
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
