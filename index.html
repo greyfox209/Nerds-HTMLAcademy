@@ -11,30 +11,35 @@
 
 <body>
   <div class="page-container">
-    <header class="page-header">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Логотип интернет-магазина Nerds." src="images/nerds-logo.svg" width="165"
-          height="65">
-      </a>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <span class="navigation-item-content">Студия</span>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-content" href="#">Клиенты</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-content" href="catalog.html">Магазин</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-content" href="#">Контакты</a>
-          </li>
-        </ul>
-        <a class="navigation-shopping-cart" href="#">Корзина</a>
-      </nav>
-    </header>
+    <div class="page-header-wrapper">
+      <header class="page-header">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="Логотип интернет-магазина Nerds." src="images/nerds-logo.svg" width="165"
+            height="65">
+        </a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <span class="navigation-item-content">Студия</span>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-item-content" href="#">Клиенты</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-item-content" href="catalog.html">Магазин</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-item-content" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="shopping-cart-wrapper">
+          <a class="shopping-cart" href="#">Корзина</a>
+        </div>
+      </header>
+    </div>
     <main class="main-container">
+      <div class="index-slider-wrapper">
       <h1 class="visually-hidden">Магазин готовых шаблонов Nerds</h1>
       <section class="index-slider">
         <div class="index-slider-text-block">
@@ -43,10 +48,13 @@
             приложения.</p>
           <a class="button button-red" href="#">Узнать больше</a>
         </div>
-        <button class="index-slider-button" type="button" disabled>Первый</button>
-        <button class="index-slider-button" type="button">Второй</button>
-        <button class="index-slider-button" type="button">Третий</button>
+        <div class="index-slider-button-wrapper">
+          <button class="index-slider-button" type="button" disabled>Первый</button>
+          <button class="index-slider-button" type="button">Второй</button>
+          <button class="index-slider-button" type="button">Третий</button>
+        </div>
       </section>
+      </div>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
