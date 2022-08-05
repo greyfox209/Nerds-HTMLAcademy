@@ -32,6 +32,10 @@ body {
   color: #283136;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -321,7 +325,31 @@ body {
   list-style: none;
 }
 
+.footer-contacts {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 69px;
+}
+
+.contacts-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 140px;
+  padding: 54px 0;
+}
+
+.contacts-information-card {
+  display: flex;
+  flex-direction: column;
+  width: 219px;
+  padding: 49px 50px 47px;
+  background-color: #FFFFFF;
+}
+
 .contacts-information-card-title {
+  margin: 0;
+  margin-bottom: 23px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -334,6 +362,74 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+}
+
+.contacts-information-card-description-adress {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.contacts-information-card-description-phone {
+  margin-bottom: 37px;
+}
+
+.contacts-information-map-wrapper {
+  position: relative;
+}
+
+.contacts-information-map {
+  display: block;
+  width: 1440px;
+  height: 416px;
+}
+
+.contacts-information-map-marker {
+  position: absolute;
+  top: 70px;
+  right: 362px;
+  width: 231px;
+  height: 190px;
+}
+
+.footer-info-wrapper {
+  width: 1158px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  width: 1060px;
+  margin-bottom: 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0;
+  margin-right: 140px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #E1E1E1;
+  border-radius: 50%;
+}
+
+.footer-promo-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-promo-description {
+  margin: 0;
 }
 
 .footer-promo-title {
@@ -462,4 +558,8 @@ body {
 
 .button-services {
   width: 160px;
+}
+
+.button-contacts {
+  width: 219px;
 }
