@@ -19,6 +19,42 @@
   src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
 }
 
+:root {
+  --basic-black: #000000;
+  --basic-red: #fb565a;
+  --basic-red-hover: #e74246;
+  --basic-red-active: #d7373b;
+  --basic-green: #00ca74;
+  --basic-yellow: #efc849;
+  --basic-white: #ffffff;
+  --basic-green-hover: #00bc6c;
+  --basic-green-active: #00aa62;
+  --basic-yellow-hover: #eab534;
+  --basic-yellow-active: #e5a722;
+  --light-gray: rgba(255, 255, 255, 0.3);
+  --background-gray: #eeeeee;
+  --basic-gray2: #dfdfdf;
+  --basic-gray3: #d5d5d5;
+  --gray-active: rgba(0, 0, 0, 0.3);
+  --gray-hover: rgba(0, 0, 0, 0.6);
+  --basic-gray-shadow: rgba(0, 1, 1, 0.1);
+  --border-gray: #dbdbdb;
+  --products-text: #666666;
+  --products-description-gray: #4d4d4d;
+  --social-gray: #e1e1e1;
+  --form-checkbox: #e3e3e3;
+  --range-gray: #d7dcdf;
+  --range-green: #00ca74;
+  --toggle-gray: #ababab;
+  --toggle-shadow: #cfcfcf;
+  --price-controls-color: #283136;
+  --slider-button: #c4c4c4;
+  --modal-input: #d7dcde;
+  --modal-input-hover: #b4b9bb;
+  --close-button: #feccce;
+  --close-button-active: #ffeeef;
+}
+
 html {
   height: 100%;
 }
@@ -39,6 +75,7 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 .visually-hidden {
@@ -325,6 +362,10 @@ a {
   list-style: none;
 }
 
+.clients-list-item {
+  opacity: 20%;
+}
+
 .footer-contacts {
   position: relative;
   width: 1440px;
@@ -421,6 +462,7 @@ a {
   height: 80px;
   background-color: #E1E1E1;
   border-radius: 50%;
+  color: inherit;
 }
 
 .footer-promo-title {
@@ -545,6 +587,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -569,13 +612,72 @@ a {
   width: 219px;
 }
 
+.navigation-logo:hover {
+  opacity: 70%;
+}
+
+.navigation-logo:active {
+  opacity: 30%;
+}
+
 .navigation-item-content:hover,
 .shopping-cart:hover {
   color: #FB565A;
 }
 
-.navigation-item-content:focus,
-.shopping-cart:focus {
+.navigation-item-content:active,
+.shopping-cart:active {
   color: #000000;
   opacity: 30%;
+}
+
+.button-red:hover {
+  background-color: #E74246;
+}
+
+.button-red:active {
+  background-color: #D7373B;
+  color: var(--light-gray);
+  box-shadow: inset 0px 3px 0px var(--basic-gray-shadow);
+}
+
+.button-green:hover {
+  background-color: var(--basic-green-hover);
+}
+
+.button-green:active {
+  background-color: var(--basic-green-active);
+  color: var(--light-gray);
+  box-shadow: inset 0px 3px 0px var(--basic-gray-shadow);
+}
+
+.button-yellow:hover {
+  background-color: var(--basic-yellow-hover);
+}
+
+.button-yellow:active {
+  background-color: var(--basic-yellow-active);
+  color: var(--light-gray);
+  box-shadow: inset 0px 3px 0px var(--basic-gray-shadow);
+}
+
+.clients-list-item:hover {
+  opacity: 100%;
+}
+
+.clients-list-item:active {
+  opacity: 10%;
+}
+
+.footer-social-link:hover {
+  background-color: #E74246;
+}
+
+.footer-social-link:active {
+  background-color: var(--basic-red-active);
+  box-shadow: inset 0px 3px 0px var(--basic-gray-shadow);
+}
+
+.footer-sociel-icon:active path {
+  fill: var(--light-gray);
 }
