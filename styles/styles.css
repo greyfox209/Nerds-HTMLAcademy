@@ -2,24 +2,21 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/roboto.woff2");
-  font-display: swap;
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto";
   font-style: medium;
   font-weight: 500;
-  src: url("fonts/robotomedium.woff2");
-  font-display: swap;
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto";
   font-style: bold;
   font-weight: 700;
-  src: url("fonts/robotobold.woff2");
-  font-display: swap;
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
 }
 
 html {
@@ -27,25 +24,21 @@ html {
 }
 
 body {
-  height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
   text-decoration: none;
-}
-
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  margin: 0;
-  background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -75,7 +68,7 @@ a {
 }
 
 .navigation {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -96,6 +89,11 @@ a {
   padding-bottom: 9px;
   text-decoration: none;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.navigation-item-current {
+  border-bottom: 2px solid #FB565A;
 }
 
 .shopping-cart-wrapper {
@@ -106,16 +104,11 @@ a {
   display: block;
   padding-top: 26px;
   padding-bottom: 9px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 30px;
-  text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 .index-slider-wrapper {
@@ -146,7 +139,7 @@ a {
 .index-slider-title {
   margin: 0;
   margin-bottom: 25px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
@@ -574,4 +567,15 @@ a {
 
 .button-contacts {
   width: 219px;
+}
+
+.navigation-item-content:hover,
+.shopping-cart:hover {
+  color: #FB565A;
+}
+
+.navigation-item-content:focus,
+.shopping-cart:focus {
+  color: #000000;
+  opacity: 30%;
 }
