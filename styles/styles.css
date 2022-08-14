@@ -509,10 +509,19 @@ a {
   color: #444444;
 }
 
+.page-title-container {
+  margin-bottom: 55px;
+  padding-top: 78px;
+  padding-bottom: 108px;
+  background-color: var(--background-gray);
+}
+
 .catalog-page-title {
+  margin: 0;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
   color: #000000;
 }
 
