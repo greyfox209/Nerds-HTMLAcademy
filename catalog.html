@@ -20,13 +20,13 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <span class="navigation-item-content navigation-item-current">Студия</span>
+            <a class="navigation-item-content" href="index.html">Студия</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-item-content" href="#">Клиенты</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-content" href="catalog.html">Магазин</a>
+            <span class="navigation-item-content navigation-item-current">Магазин</span>
           </li>
           <li class="navigation-item">
             <a class="navigation-item-content" href="#">Контакты</a>
@@ -45,17 +45,19 @@
     <section class="catalog-products">
       <h2 class="visually-hidden">Список шаблонов с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Стоимость:</legend>
-          <div class="range">
-            <div class="range-scale">
-              <div class="range-bar">
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
+        <fieldset class="catalog-filter-group catalog-filter-group-price">
+          <legend class="catalog-filter-title catalog-filter-title-price">Стоимость:</legend>
+          <div class="range-wrapper">
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="right: 68px; width: 143px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
             </div>
             <div class="range-wrapper-inputs">
@@ -68,7 +70,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group catalog-filter-group-grid">
           <legend class="catalog-filter-title">Сетка:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -94,7 +96,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group catalog-filter-group-features">
           <legend class="catalog-filter-title">Особенности:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">

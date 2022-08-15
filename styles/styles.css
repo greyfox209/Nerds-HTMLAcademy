@@ -525,7 +525,37 @@ a {
   color: #000000;
 }
 
+.catalog-products {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog-filter {
+  width: 260px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-group-price {
+  margin-bottom: 54px;
+}
+
+.catalog-filter-group-grid {
+  margin-bottom: 47px;
+}
+
+.catalog-filter-group-features {
+  margin-bottom: 50px;
+}
+
 .catalog-filter-title {
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -533,12 +563,76 @@ a {
   color: #000000;
 }
 
+.catalog-filter-title-price {
+  margin-bottom: 48px;
+}
+
+.range {
+  margin-bottom: 14px;
+  padding: 39px 22px 39px 33px;
+  background-color: var(--background-gray);
+  border-radius: 3px;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  background-color: var(--range-gray);
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: var(--range-green);
+}
+
+.range-toggle {
+  position: absolute;
+  padding: 2px;
+  background-color: var(--toggle-gray);
+  box-shadow: 0 2px 1px 0 var(--toggle-shadow);
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -9px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -9px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-filter-label {
   line-height: 22px;
+  text-transform: uppercase;
 }
 
 .range-input {
+  width: 64px;
+  margin-left: 8px;
+  padding: 8px 8px;
   line-height: 22px;
+  text-align: center;
+  color: var(--price-controls-color);
+  background-color: var(--background-gray);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .control-label {
