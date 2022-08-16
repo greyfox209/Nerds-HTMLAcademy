@@ -510,7 +510,6 @@ a {
 }
 
 .page-title-container {
-  margin-bottom: 55px;
   padding-top: 78px;
   padding-bottom: 108px;
   background-color: var(--background-gray);
@@ -530,6 +529,8 @@ a {
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
+  padding-top: 55px;
+  padding-bottom: 60px;
 }
 
 .catalog-filter {
@@ -724,32 +725,121 @@ a {
   color: #000000;
 }
 
+.sorting-container-range-type {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sorting-container-range-type-list {
   display: flex;
   justify-content: space-between;
+  width: 272px;
   margin: 0;
   margin-right: 47px;
   padding: 0;
   list-style: none;
 }
 
-.range-type-text {
+.sorting-container-direction-arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+}
+
+.range-type-link {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--gray-active);
+}
+
+.direction-arrow-down {
+  content: "";
+  position: relative;
+  top: 7px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../images/direction-arrow-down.svg");
+  opacity: 20%;
+}
+
+.direction-arrow-up {
+  content: "";
+  position: relative;
+  top: 7px;
+  transform: rotate(180deg);
+  width: 11px;
+  height: 10px;
+  background-image: url("../images/direction-arrow-down.svg");
+  opacity: 20%;
+}
+
+.template-catalog {
+  margin-bottom: 54px;
 }
 
 .template-catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.template-catalog-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.template-catalog-browser-stylization-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 13px 16px;
+  background-color: var(--products-description-gray);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  list-style: none;
+}
+
+.template-catalog-browser-stylization-item {
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+}
+
+.template-catalog-image {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.template-catalog-item-pop-up {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.template-catalog-item-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding: 26px 0 44px;
+  text-align: center;
+  background-color: var(--background-gray);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
 .template-catalog-item-title {
+  margin: 0;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -758,6 +848,8 @@ a {
 }
 
 .template-catalog-item-description {
+  margin: 0;
+  margin-bottom: 32px;
   line-height: 18px;
   color: #666666;
 }
@@ -767,6 +859,44 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.catalog-pagination-list {
+  display: flex;
+  width: 760px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-pagination-item {
+  margin-right: 11px;
+}
+
+.catalog-pagination-link {
+  display: block;
+  background-color: var(--background-gray);
+  width: 50px;
+  padding: 17px 0 15px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  color: var(--basic-black);
+  cursor: pointer;
+}
+
+.catalog-pagination-item-current {
+  width: 44px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-gray-shadow);
 }
 
 .button {
@@ -808,6 +938,12 @@ a {
 
 .button-grey {
   width: 260px;
+  color: var(--basic-black);
+}
+
+.template-catalog-button {
+  align-self: center;
+  width: 200px;
 }
 
 .navigation-logo:hover {
@@ -878,4 +1014,8 @@ a {
 
 .footer-sociel-icon:active path {
   fill: var(--light-gray);
+}
+
+.template-catalog-item:hover .template-catalog-item-pop-up {
+  display: block;
 }
