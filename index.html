@@ -209,28 +209,28 @@
   </footer>
   <div class="modal-container modal-container-close">
     <div class="modal">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
       <section class="modal-content">
         <h2 class="modal-title">Напишите нам</h2>
+        <a class="modal-close-button" href="#" aria-label="Закрыть форму обратной связи.">
+          <span class="visually-hidden">Закрыть</span>
+        </a>
         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group-wrapper">
             <div class="field-group">
               <label class="field-group-label" for="name">Ваше имя:</label>
-              <input class="feedback-form-field feedback-form-field-name-email" type="text" id="name" name="name"
+              <input class="feedback-form-field" type="text" id="name" name="name"
                 required placeholder="Имя Фамилия">
             </div>
             <div class="field-group">
               <label class="field-group-label" for="email">Ваш email:</label>
-              <input class="feedback-form-field feedback-form-field-name-email" type="email" id="email" name="email"
+              <input class="feedback-form-field" type="email" id="email" name="email"
                 required placeholder="email@example.com">
             </div>
           </div>
-          <div class="field-group">
+          <div class="field-group field-group-feedback-letter">
             <label class="field-group-label" for="feedback-letter">Текст письма:</label>
-            <input class="feedback-form-field feedback-form-field-feedback-letter" type="text" id="feedback-letter"
-              name="feedback-letter" required placeholder="В свободной форме">
+            <textarea class="feedback-form-field-feedback-letter" id="feedback-letter"
+              cols="15" rows="5" required placeholder="В свободной форме"></textarea>
           </div>
           <button class="button button-red modal-button">Отправить</button>
         </form>
