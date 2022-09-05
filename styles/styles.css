@@ -528,7 +528,7 @@ a {
   animation-duration: 0.6s;
 }
 
-.modal {
+.modal-container {
   width: 760px;
   margin: 0 auto;
   padding: 63px 100px 84px 100px;
@@ -538,8 +538,8 @@ a {
   transform: translate(-50%, -50%);
   background-color: var(--basic-white);
   box-shadow: 0 20px 40px -10px var(--basic-black);
+  z-index: 4;
   display: none;
-  z-index: 5;
 }
 
 .modal-content {
@@ -608,7 +608,17 @@ a {
   color: #000000;
 }
 
-.feedback-form-field {
+.feedback-form-field-login {
+  display: block;
+  width: 324px;
+  padding: 16px;
+  line-height: 18px;
+  color: #444444;
+  border: 2px solid var(--modal-input);
+  border-radius: 3px;
+}
+
+.feedback-form-field-email {
   display: block;
   width: 324px;
   padding: 16px;

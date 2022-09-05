@@ -1,9 +1,9 @@
-const modal = document.querySelector('.modal');
+const modal = document.querySelector('.modal-container');
 const contactsBtn = document.querySelector('.button-contacts');
 const modalClose = document.querySelector('.modal-close-button');
-const login = modal.querySelector('[name=login]');
+const login = modal.querySelector('.feedback-form-field-login');
 const form = modal.querySelector('form');
-const email = modal.querySelector('[name=email]');
+const email = modal.querySelector('.feedback-form-field-email');
 const storage = localStorage.getItem('login');
 
 
@@ -17,7 +17,7 @@ contactsBtn.addEventListener ('click', function (evt) {
   } else {
     login.focus();
   }
-})
+});
 
 modalClose.addEventListener ('click', function (evt) {
   evt.preventDefault();
