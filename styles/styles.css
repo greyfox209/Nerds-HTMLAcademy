@@ -380,15 +380,16 @@ a {
 
 .footer-contacts {
   position: relative;
-  width: 1440px;
-  margin: 0 auto;
   margin-bottom: 69px;
+  z-index: 0;
 }
 
+
 .contacts-content-wrapper {
-  position: absolute;
-  top: 0;
-  left: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1158px;
+  margin: 0 auto;
   padding: 54px 0;
 }
 
@@ -398,6 +399,7 @@ a {
   width: 219px;
   padding: 49px 50px 47px;
   background-color: #FFFFFF;
+  z-index: 3;
 }
 
 .contacts-information-card-title {
@@ -427,21 +429,25 @@ a {
 }
 
 .contacts-information-map-wrapper {
-  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contacts-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .contacts-information-map {
-  display: block;
-  width: 1440px;
-  height: 416px;
-}
-
-.contacts-information-map-marker {
   position: absolute;
-  top: 70px;
-  right: 362px;
-  width: 231px;
-  height: 190px;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .footer-info-wrapper {
