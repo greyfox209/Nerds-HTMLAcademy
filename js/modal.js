@@ -22,7 +22,6 @@ contactsBtn.addEventListener ('click', function (evt) {
 modalClose.addEventListener ('click', function (evt) {
   evt.preventDefault();
   modal.classList.remove('modal-show');
-  modal.classList.remove('modal-error');
 });
 
 window.addEventListener('keydown', function (evt) {
@@ -31,12 +30,5 @@ window.addEventListener('keydown', function (evt) {
       evt.preventDefault();
       modal.classList.remove('modal-show');
     }
-  }
-});
-
-form.addEventListener('submit', function(evt) {
-  if (!login.value || !email.value) {
-    evt.preventDefault();
-    modal.classList.add('modal-error');
   }
 });

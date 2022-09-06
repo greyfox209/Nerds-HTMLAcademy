@@ -307,7 +307,7 @@
           <h3 class="contacts-information-card-title">NЁRDS DESIGN STUDIO</h3>
           <p class="contacts-information-card-description-adress">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</p>
           <a class="contacts-information-card-description-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <button class="button button-red button-contacts" type="submit">Напишите нам</button>
+          <a class="button button-red button-contacts" href="#">Напишите нам</a>
         </div>
       </div>
       <div class="contacts-information-map-wrapper">
@@ -363,6 +363,35 @@
     </div>
   </footer>
   </div>
+
+  <div class="modal-container">
+    <section class="modal-content">
+      <h2 class="modal-title">Напишите нам</h2>
+      <a class="modal-close-button" href="#" aria-label="Закрыть форму обратной связи.">
+        <span class="visually-hidden">Закрыть</span>
+      </a>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="field-group-wrapper">
+          <div class="field-group">
+            <label class="field-group-label" for="name">Ваше имя:</label>
+            <input class="feedback-form-field-login" type="text" id="name" name="name" required placeholder="Имя Фамилия">
+          </div>
+          <div class="field-group">
+            <label class="field-group-label" for="email">Ваш email:</label>
+            <input class="feedback-form-field-email" type="email" id="email" name="email" required
+              placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="field-group field-group-feedback-letter">
+          <label class="field-group-label" for="feedback-letter">Текст письма:</label>
+          <textarea class="feedback-form-field-feedback-letter" id="feedback-letter" cols="15" rows="5" required
+            placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button button-red modal-button">Отправить</button>
+      </form>
+    </section>
+  </div>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
